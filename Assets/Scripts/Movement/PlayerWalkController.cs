@@ -19,9 +19,13 @@ public class PlayerWalkController : MonoBehaviour
     {
         myRigidBody.velocity = new Vector3(x: playerInputController.walkInput * walkSpeed, myRigidBody.velocity.y, z: 0);
         
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            myTransform.rotation *= Quaternion.Euler(0f, 180f, 0f);
+            myTransform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            myTransform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
     }
 }
