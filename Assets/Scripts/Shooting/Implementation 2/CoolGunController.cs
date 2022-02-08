@@ -29,6 +29,7 @@ public class CoolGunController : MonoBehaviour
 
     private void FireBullet()
     {
+        
         playerImmediateJumpController.enabled = true;
         playerWalkController.enabled = true;
 
@@ -52,4 +53,4 @@ public class CoolGunController : MonoBehaviour
         playerImmediateJumpController.enabled = false;
         playerWalkController.enabled = false;
     }
-    }
+}
