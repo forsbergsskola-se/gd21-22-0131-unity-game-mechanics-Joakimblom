@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8703461675901182654}
   - component: {fileID: 4673144129188628124}
   - component: {fileID: 5942578028161888910}
-  - component: {fileID: 5097332689541567687}
+  - component: {fileID: 8556550451298769927}
   m_Layer: 0
   m_Name: SmallBullet
   m_TagString: Untagged
@@ -101,7 +101,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &5097332689541567687
+--- !u!135 &8556550451298769927
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,5 +112,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

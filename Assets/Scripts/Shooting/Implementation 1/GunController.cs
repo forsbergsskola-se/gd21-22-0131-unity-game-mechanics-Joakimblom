@@ -20,6 +20,6 @@ public class GunController : MonoBehaviour
     {
         Rigidbody projectile = Instantiate(smallBullet, transform.position, transform.rotation);
         projectile.velocity = transform.TransformDirection(new Vector3(bulletSpeed, (float) upwardsbulletforce, 0));
-        Destroy(projectile.gameObject, 0.5f);
+        Destroy(projectile.gameObject, 3.5f);
     }
 }
