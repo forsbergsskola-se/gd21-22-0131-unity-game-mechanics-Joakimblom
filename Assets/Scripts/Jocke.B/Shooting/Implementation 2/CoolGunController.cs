@@ -15,21 +15,20 @@ public class CoolGunController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire2"))
         {
-            BeginChargeAttack();
+            BeginChargeAttack();  //Initiate BigBullet and disable Movement and jumping.
         }
         if (Input.GetButton("Fire2"))
         {
-            ChargeScaling();
+            ChargeScaling();  //Big Bullet starts scaling
         }
         if (Input.GetButtonUp("Fire2"))
         {
-            FireBullet();
+            FireBullet(); //BigBullet is fired and Movement and jumping is Enabled back.
         }
     }
 
     private void FireBullet()
     {
-        
         playerImmediateJumpController.enabled = true;
         playerWalkController.enabled = true;
 
